@@ -1,0 +1,333 @@
+body{
+    margin: 0px;
+}
+
+#body-header{
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.slides{
+    position: absolute;
+    opacity: 0.9;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transition: 1s ease-in-out;
+
+}
+
+#body-header nav{
+    margin-bottom: 3rem;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: #f8f9fa;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-family: ui-sans-serif;
+    font-size: 1.4rem;
+    transition: 0.5s ease-in-out;
+}
+
+/* Implementing the CSS for hovering over anchor tags in navigation section*/
+
+.nav-link.active:hover{
+    color: #0b0b0b;
+    border-radius: 10px;
+    border-bottom: 3px solid blue;
+    background-color: whitesmoke;
+}
+
+
+.navbar-toggler {
+    background-color: white;
+}
+.section-heading{
+    padding: 3rem;
+}
+
+.heading-line{
+    width: 100%;
+    height: 0px;
+    border: 1.3px dotted rgb(137, 132, 132);
+}
+
+.glyphicon-search{
+    width: 4rem;
+    position: relative;
+    left: -2rem;
+}
+
+img, svg {
+    vertical-align: -webkit-baseline-middle;
+}
+
+#quote{
+   font-family:'Times New Roman', Times, serif; 
+}
+#text{
+    color: #f8f9fa;
+    font-weight: 900;
+}
+#sub-text{
+    color: whitesmoke;
+    background-color: black;
+    font-family:sans-serif, monospace;
+}
+
+#about{
+    color: aliceblue;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-family: emoji;
+}
+
+.move-icon{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.move-icon button{
+    font-size: 1.4rem;
+    border-radius: 10px;
+    color: #040000;
+    cursor: pointer;
+}
+
+.move-icon button:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+
+/* Implementing CSS for Grid Section Photos */
+#grid{
+    width: 100vw;
+    height: auto;
+}
+
+#grid img{
+    height: 80%;
+    width: 80%;
+    box-shadow: 7px 7px 10px 0px grey;
+    border-radius: 10px;
+}
+
+/* Implementing backgrounds for odd even sections */
+section:nth-child(2n){
+    background-image: url(./Images/gridPhotos/overhead-view-painted-camera-against-pink-background.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+section:nth-child(2n+1){
+    background-image: url(./Images/gridPhotos/testimonial.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#testimonial{
+    position: relative;
+    height: 100vh;
+    
+}
+
+#testimonial h1{
+    margin-top: 3rem;
+    text-decoration: underline;
+}
+
+
+#testimonial p{
+    margin-top: 4rem;
+    font-weight: 600;
+    font-size : 1.5rem;
+}
+
+
+.dotted-line {
+    position: absolute;
+    width: 40%;
+    transform: rotate(90deg);
+    height: 0px;
+    border: 1.2px dotted #b5aeae;
+    top: 18rem;
+    left: 26%;
+}
+
+div.carousel-inner{
+    box-shadow: 0px 0px 7px 0px #0808fa;
+    border-radius: 10px;
+}
+
+div.container-fluid.col-7{
+    height: 78%;
+    margin-top: 8rem;
+    width: 45%;
+}
+
+#testimonial .carousel.slide{
+    border-radius: 10px;
+    box-shadow: 0px 0px 18px 3px #9f7e7e;
+}
+
+#testimonial .carousel-inner{
+    box-shadow:  0px 7px 0px #3f05fe;
+    border-radius: 10px;
+}
+
+/* Implementing CSS for Gallery Section */
+
+#gallery-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#gallery-wrapper>h1{
+    margin-top: 1.5rem;
+    text-decoration: underline;
+}
+
+#gallery-wrapper>img{
+    position: absolute;
+    z-index: 1;
+}
+
+#prevBtn{
+    top: 74%;
+    left: 40%;
+}
+#nextBtn{
+    top: 74%;
+    right: 40%;
+    transform: rotate(180deg);
+}
+
+#gallery{
+    display: flex;
+    height: 90%;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 5%;
+    scroll-behavior: smooth;
+}
+
+#gallery img{
+    width: 32%;
+    object-fit: cover;
+    margin-top: 1.5rem;
+    margin-right: 14px;
+    height: 14rem;
+    filter: grayscale(100);
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out;
+    box-shadow: 0px 0px 10px 3px rgb(244, 175, 90);
+    border-radius: 10px;
+}
+
+/* On hovering over gallery images psedo class is implemented */
+#gallery img:hover{
+    transform: scale(1.1);
+    filter: grayscale(0);
+}
+
+.common-arrow:hover{
+    border-radius: 50%;
+    background-color: rgb(244, 244, 230);
+}
+
+
+.common-arrow{
+    cursor: pointer;
+    flex: none;
+    height: 10%;
+    width: 5%;
+}
+
+/* Implementing CSS for Contact our Page */
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 100vw;
+}
+#contact h1{
+    padding-top: 3rem;
+}
+#contact h1 span{
+    margin: auto;
+}
+#contact>div{
+    margin-bottom: 3rem;
+}
+
+#sub-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#sub-contact div{
+    margin-bottom: 2rem;
+}
+
+
+/* Making Our Page Responsive for some Areas using media Queries */
+
+/* Handling Gallery Images */
+
+@media screen and (max-width:500px) {
+    #gallery img{
+        width:50%;
+    }
+
+    #carouselExampleIndicators{
+        margin-top: 7rem;
+    }
+    #text{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    #sub-text{
+        font-size: 1.2rem;
+    }
+    #about{
+        font-size: 0.8rem;
+    }
+
+    .common-arrow{
+        width: 2.3rem;
+    }
+
+    #nextBtn{
+        right: 32%;
+        top:77%
+    }
+    #prevBtn{
+        left: 31%;
+        top: 77%;
+    }
+
+    .move-icon {
+        margin-top: 8rem;
+    }
+
+    #testimonial p{
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
+}
+
